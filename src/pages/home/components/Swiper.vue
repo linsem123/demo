@@ -2,7 +2,7 @@
     <div class="wrapper">
         <swiper :options="swiperOption">
             <swiper-slide v-for="item of swiperList" :key="item.id">
-                <img class="swipe-img" alt="去哪儿门票" :src="item.imgUrl">
+                <img class="swiper-img" :src="item.imgUrl">
             </swiper-slide>
             <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
@@ -11,11 +11,11 @@
 <script>
 export default{
     name:'HomeSwiper',
-    data (){
+    data(){
         return {
-            swiperOption:{
-                pagination:'.swiper-pagination',
-                loop:true
+            swiperOption: {
+                pagination: '.swiper-pagination',
+                loop: true
             },
             swiperList:[{
                 id:'001',
@@ -29,14 +29,14 @@ export default{
 }
 </script>
 <style lang="stylus" scoped>
-    .wrapper>>>.swiper-pagination-bullet-active
-        background :white !important
+    .wrapper>>> .swiper-pagination-bullet-active
+        background :red !important
     .wrapper
         width :100%
         height :0
         padding-bottom:26.7%
         overflow :hidden
         background :#eee
-        .swipe-img
+        .swiper-img
             width :100%
 </style>
