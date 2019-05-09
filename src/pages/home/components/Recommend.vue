@@ -4,11 +4,11 @@
             热门营销
         </div>
         <ul>
-            <li class="item border-bottom">
-                <img class="item-img" src="http://img1.qunarzz.com/sight/p0/1904/65/65a949083122447da3.img.jpg_200x200_c4b2f699.jpg"/>
+            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+                <img class="item-img" :src="item.imgUrl"/>
                 <div class="item-info">
-                    <p class="item-title">大连海洋馆</p>
-                    <p class="item-desc">我们一起学猫叫，一起喵喵喵</p>
+                    <p class="item-title">{{item.title}}</p>
+                    <p class="item-desc">{{item.desc}}</p>
                     <button class="item-btn">查看详情</button>
                 </div>
             </li>
@@ -17,7 +17,27 @@
 </template>
 <script>
     export default{
-        name:'HomeRecommend'
+        name:'HomeRecommend',
+        data () {
+           return{
+                recommendList:[{
+                id: '001',
+                imgUrl:'http://img1.qunarzz.com/sight/p0/1904/65/65a949083122447da3.img.jpg_200x200_c4b2f699.jpg',
+                title:'大连海洋馆',
+                desc:'我们一起学猫叫，一起喵喵喵',
+            },{
+                id:'002',
+                imgUrl:'http://img1.qunarzz.com/sight/p0/1904/65/65a949083122447da3.img.jpg_200x200_c4b2f699.jpg',
+                title:'大连海洋馆',
+                desc:'我们一起学猫叫，一起喵喵喵',
+            },{
+                id:'003',
+                imgUrl:'http://img1.qunarzz.com/sight/p0/1904/65/65a949083122447da3.img.jpg_200x200_c4b2f699.jpg',
+                title:'大连海洋馆',
+                desc:'我们一起学猫叫，一起喵喵喵',
+            }]
+           }
+        }
     }
 </script>
 <style lang="stylus" scoped>
