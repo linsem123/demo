@@ -31,7 +31,7 @@ export default {
         }
     },
     mounted(){
-        this.getKind()
+        this.getKind();
     }
 }
 </script>
