@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link tag="div" to="/" class="header-ads" v-show="showFlag">
-      <div class="iconfont ads-back-icon">&#xe624;</div>
+      <div class="iconfont ads-back-icon">&#xe63f;</div>
     </router-link>
     <div class="header-fixed" v-show="!showFlag" :style="opacityStyle">
       <router-link to="/">

@@ -1,16 +1,16 @@
 <template>
     <div class="header">
         <div class="header-left">
-            <div class="iconfont back-icon">&#xe624;</div>
+            <div class="iconfont back-icon">&#xe63f;</div>
         </div>
         <div class="header-input">
-            <span class="iconfont">&#xe632;</span>
+            <span class="iconfont">&#xe613;</span>
             输入城市景点
         </div>
         <router-link to="/city">
             <div class="header-right">           
                 {{this.city}}
-                <span class="iconfont arrow-icon">&#xe64a;</span>
+                <span class="iconfont arrow-icon">&#xe654;</span>
             </div>
         </router-link>
     </div>
