@@ -18,7 +18,13 @@
                 @click="hadleClickDelete"> &#xe625; </span>
             </div>
             <div class="header-right" @click="handleClickSeach">搜索</div>
-        </div>   
+        </div> 
+        <!-- <ticket-history 
+        class="show-list" 
+        v-show="showFlag&&!inputMsg" 
+        :historySearch="historySearch"
+        :inputMs="inputMsg">
+        </ticket-history> -->
         <div class="show-list" v-show="showFlag&&!inputMsg">
             <div class="history border-bottom" v-show="historySearch.length!=0">
                 <div class="history-head">
@@ -39,7 +45,7 @@
         </div>
         <div class="search-list" v-show="showFlag&&inputMsg">
             123
-        </div>
+        </div> 
     </div>
 </template>
 
